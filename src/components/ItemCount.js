@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Button from 'react-bootstrap/Button';
+import Style from './Styles.css';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
     const [count, setCount] = useState(parseInt(initial));
@@ -16,12 +18,12 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }, [initial])
 
     return (
-        <div>
-            <button disabled={count <= 1} onClick={decreciente}> - </button>
+        <div className="counter">
+            <Button variant="outline-secondary" disabled={count <= 1} onClick={decreciente}> - </Button>{' '}
             <span> {count} </span>
-            <button disabled={count >= stock} onClick={creciente}> + </button>
+            <Button variant="outline-secondary" disabled={count >= stock} onClick={creciente}> + </Button>{' '}
             <div>
-                <button disabled={stock<=0} onClick={()=> onAdd(count)}>Agregar al Carrito</button>
+                <Button variant="outline-dark" disabled={stock<=0} onClick={()=> onAdd(count)}>Agregar al Carrito</Button>{' '}
             </div>
         </div>
     )

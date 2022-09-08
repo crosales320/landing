@@ -1,0 +1,13 @@
+.counter {
+    margin: auto;
+    text-align: center;
+}
+
+.foto img {
+    width: 25%;
+    height: 50%;
+}
+
+.foto p {
+    text-decoration: none;
+}
