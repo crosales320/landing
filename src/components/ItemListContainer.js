@@ -4,9 +4,8 @@ import ItemList from "./ItemList";
 import { useState, useEffect } from "react";
 
 const productos = [
-{ id:1, image: "https://fotomatonbodas.es/wp-content/uploads/2022/01/WhatsApp-Image-2020-02-11-at-18.26.55-1.jpg", title: "Plataforma 360"},
-{ id:2, image: "https://www.lemodels.com.mx/wp-content/uploads/Cabina-de-Fotos-en-Toluca-Metepec-Lerma-Valle-de-Bravo-5.jpg", title: "Cabina Fotografica"},
-{ id:3, image: "https://cdn0.casamiento.com.uy/vendor/1079/3_2/960/jpg/espejo-4_16_1079-164944500718959.jpeg", title: "Espejo Magico"},
+{ id:1, image: "https://www.lemodels.com.mx/wp-content/uploads/Cabina-de-Fotos-en-Toluca-Metepec-Lerma-Valle-de-Bravo-5.jpg", title: "Cabina Fotografica"},
+{ id:2, image: "https://cdn0.casamiento.com.uy/vendor/1079/3_2/960/jpg/espejo-4_16_1079-164944500718959.jpeg", title: "Espejo Magico"},
 ];
 
 const ItemListContainer = (props) => {
@@ -23,7 +22,7 @@ const ItemListContainer = (props) => {
     }, [])
 
     const onAdd = (quantity) =>{
-        console.log("Compraste ${quantity} unidades")
+        console.log(`Compraste ${quantity} unidades`)
     }
     return (
         <div>

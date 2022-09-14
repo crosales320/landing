@@ -1,13 +1,20 @@
+
 .counter {
     margin: auto;
     text-align: center;
-}
 
-.foto img {
+}
+.card {
+    text-decoration: none;
     width: 25%;
     height: 50%;
 }
 
-.foto p {
-    text-decoration: none;
+.cardDetail {
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }

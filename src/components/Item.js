@@ -1,11 +1,14 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
-const Item = ({info}) => {
+const Item = ({ info }) => {
     return (
-            <a href="" className="foto">
-                <img src={info.image} alt=""/>
-                <p> {info.title} </p>
-            </a>
+        <Card className="card">
+        <Card.Img variant="top" src={info.image} />
+        <Card.Body>
+        <Card.Title>{info.title} </Card.Title>
+        </Card.Body>
+        </Card>
     )
 }
 
