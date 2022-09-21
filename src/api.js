@@ -1,6 +1,8 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 export const getItem = () => new Promise ((resolve, rejet) =>{
+    
     setTimeout (()=> resolve (
         {
         id:1, 
@@ -8,4 +10,5 @@ export const getItem = () => new Promise ((resolve, rejet) =>{
         title: "Plataforma 360"
         }
     ), 2000)
+
 });

@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
+import { NavLink} from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -10,11 +11,11 @@ function NavBar() {
                 <Container>
                     <img src='https://img1.freepng.es/20180401/opw/kisspng-infiniti-logo-infinity-symbol-polygonal-5ac0724acaa2d8.21936903152256161083.jpg' width={50} height={50}/>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-                        <Nav.Link href="#servicios">Servicios</Nav.Link>
-                        <Nav.Link href="#galeria">Galeria</Nav.Link>
-                        <Nav.Link href="#contacto">Contacto</Nav.Link>
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/nosotros">Nosotros</NavLink>
+                        <NavLink to='/categoria/servicios'>Servicios</NavLink>
+                        <NavLink to='/categoria/galeria'>Galeria</NavLink>
+                        <NavLink to="/contacto">Contacto</NavLink>
                     </Nav>
                     <CartWidget cart={3}/>
                 </Container>
