@@ -28,10 +28,10 @@ export const ItemDetailContainer = () => {
 
         getData.then (res => setData(res.find(producto => producto.id === parseInt(detalleId))));
     
-    }, [])
+    }, [detalleId])
 
     return (
-        <ItemDetail data={productos} />
+        <ItemDetail data={data} />
     )
 }
 
