@@ -16,8 +16,9 @@ function NavBar() {
                         <NavLink to='/categoria/servicios'>Servicios</NavLink>
                         <NavLink to='/categoria/galeria'>Galeria</NavLink>
                         <NavLink to="/contacto">Contacto</NavLink>
+                        <NavLink to="/cart"><CartWidget/></NavLink>
                     </Nav>
-                    <CartWidget cart={3}/>
+                    
                 </Container>
             </Navbar>
             <br />
